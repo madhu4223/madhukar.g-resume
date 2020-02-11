@@ -73,38 +73,64 @@ skill_details = [
         Level:'Advanced'
     },
     {
-        Name: 'Python',
-        Level:'Intermediate'
-    },
-    {
         Name: 'Python, CSS',
         Level:'Intermediate'
     }
 ]
 
+education_details = [
+    {
+        Course: 'Department of Electronics and communicaton Engineering',
+        College: 'RGUKT(IIIT) BASAR',
+        Year: '2014–2018'
+    },
+    {
+        Course: 'Pre-University Course(M.P.C)',
+        College: 'RGUKT(IIIT) BASAR',
+        Year: '2012-2014'
+    },
+    {
+        Course: 'Matriculation',
+        College: 'Z.P High School Narsimhulapally',
+        Year: '2011-2012'
+    }
+]
 
 
 module.exports = {
     getResume : function (){
 
+        // Name
         console.log(line_break,line_break,line_break,line_break)
-        console.log(FgBlue,"                                                                                        MADHUKAR GURRAM",line_break)
-        console.log(FgCyan,'                                                                                    Senior Software Engineer',line_break,line_break)
+        console.log(FgBlue,Bright,"                                                                                        MADHUKAR GURRAM",line_break)
+        console.log(FgCyan,Bright,'                                                                                    Senior Software Engineer',line_break,line_break)
         
+        //Study
+        console.log(FgWhite,Bright,"Education:")
+        console.log(line_break)
+        console.table(education_details)
+        console.log(line_break,line_break,line_break)
+
         // Experience
-        console.log(FgWhite,"Experience: ")
+        console.log(FgWhite,Bright,"Experience: ")
+        console.log(line_break)
         console.table(exp_details)
         console.log(line_break,line_break)
 
         // Projects
-        console.log("Projects:")
+        console.log(FgWhite,Bright,"Projects:")
+        console.log(line_break)
         console.table(project_details)
         console.log(line_break,line_break)
 
         //Skills
-        console.log("Skills:")
-        console.table(skill_details)
-        console.log(line_break,line_break)
+        // console.log(FgWhite,Bright,"Skills:")
+        // console.log(line_break)
+        // console.table(skill_details)
+        // console.log(line_break,line_break)
+
+        console.log(FgWhite,Bright,"Skills:")
+       
 
     },
 
