@@ -1,0 +1,16 @@
+{
+  "name": "gurram-madhukar",
+  "version": "1.0.0",
+  "description": "My resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "get resume"
+  },
+  "keywords": [
+    "madhukar",
+    "gurram",
+    "resume"
+  ],
+  "author": "G.Madhukar",
+  "license": "ISC"
+}
