@@ -69,7 +69,11 @@ project_details = [
 
 skill_details = [
     {
-        Name: 'C, Core Java, Nodejs, Angular 2+, HTML, Javascript, Typescript, Ajax',
+        Name: 'C, Core Java',
+        Level:'Advanced'
+    },
+    {
+        Name: 'Nodejs, Angular 2+, HTML, Javascript, Typescript',
         Level:'Advanced'
     },
     {
@@ -102,8 +106,12 @@ module.exports = {
 
         // Name
         console.log(line_break,line_break,line_break,line_break)
-        console.log(FgBlue,Bright,"                                                                                        MADHUKAR GURRAM",line_break)
-        console.log(FgCyan,Bright,'                                                                                    Senior Software Engineer',line_break,line_break)
+        console.log(FgCyan,Bright,"                                                                                        MADHUKAR GURRAM",line_break)
+        console.log(FgBlue,Bright,'                                                                                    Senior Software Engineer',line_break,line_break)
+
+        //contactInfo
+        console.log(FgCyan,'                              Email: madhu4223@gmail.com' + '                                                                                              '+ 'Mobile: 9542575332')
+        console.log(line_break)
         
         //Study
         console.log(FgWhite,Bright,"Education:")
@@ -130,6 +138,15 @@ module.exports = {
         // console.log(line_break,line_break)
 
         console.log(FgWhite,Bright,"Skills:")
+        console.log(line_break)
+
+        console.log(FgCyan,'     Skill                                                            Level ')
+        console.log(line_break)
+        console.log(Reset,FgGreen,Bright, skill_details[0].Name+"                                                      " + skill_details[0].Level)
+        console.log(Reset,FgGreen,Bright, skill_details[1].Name+"                  " + skill_details[1].Level)
+        console.log(Reset,FgGreen,Bright, skill_details[2].Name+"                                                       " + skill_details[2].Level)
+
+        console.log(line_break,line_break)
        
 
     },
